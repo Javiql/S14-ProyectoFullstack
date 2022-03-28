@@ -1,0 +1,72 @@
+/*! formulario d estudiantes*/
+.form-container {
+  width: 760px;
+  max-width: 100%;
+  min-width: 240px;
+  background-color: var(--boton-secundary);
+  border-radius: 10px;
+  box-shadow: 0px 5px 16px 0px var(--primary-color);
+  overflow: hidden;
+  color: var(--font-color-reverse);
+  font-weight: 900;
+  margin: 0 auto;
+}
+.form-header {
+  background: var(--primary-color);
+  padding: 1px;
+  text-align: center;
+  border-bottom: 5px solid var(--font-color-reverse);
+}
+.form {
+  padding: 5px 40px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form label {
+  margin: 5px auto;
+  display: block;
+}
+.form-group *::placeholder {
+  color: var(--primary-color);
+
+}
+.form-check input[type="checkbox"] {
+  margin: 15px auto;
+}
+.form button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background: var(--boton-success);
+  border-radius: 10px;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease-in-out;
+}
+.form button:hover {
+  background-color: var(--primary-color);
+  color:var(--font-color-reverse)
+}
+
+.table-responsive {
+        width: 100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+

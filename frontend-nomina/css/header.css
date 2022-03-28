@@ -1,0 +1,74 @@
+/* estilos del header o encabezado */
+.header {
+  background-color: var(--primary-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  z-index: 2;
+}
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: var(--font-color-reverse);
+  margin-left: 5px;
+}
+.logo img {
+  border-radius: 50%;
+}
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  padding: 0 10px;
+}
+.menu a {
+  color: var(--font-color-reverse);
+  line-height: 50px;
+}
+/*! media querys */
+/* en dispositivos de 0 a 760px se aplican estos estilos*/
+@media (max-width: 760px) {
+  main{
+      margin-top: 180px;
+  }
+  .navegacion {
+   flex-direction: column;
+   margin-top: 10px;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap; /* ocupe el ancho del viewport */
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .menu li {
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px #fff;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+    
+  }
+  .menu li:hover {
+    background-color: var(--boton-warning);
+    font-size:22px;
+    
+  }
+   .menu li a{
+     line-height: 30px;
+   } 
+}
